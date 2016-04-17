@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "loopback1",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "roleMapping": {
+    "dataSource": "loopback1",
+    "public": false
+  },
+  "role": {
+    "dataSource": "loopback1",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "Person": {
+    "dataSource": "loopback1",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company": {
+    "dataSource": "loopback1",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "user": {
+    "dataSource": "loopback1",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    },
+    "$promise": {},
+    "$resolved": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "emailer@farodevelopment.ro",
+          "pass": "12061988"
+        }
+      }
+    ]
+  },
+  "loopback1": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "loopback1",
+    "name": "loopback1",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
