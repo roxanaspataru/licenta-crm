@@ -23,11 +23,12 @@
     ]
   },
   "loopback1": {
-    "host": "localhost",
+    "host": "dev.faromedia.it",
     "port": 3306,
-    "database": "loopback1",
+    "database": "loopback-crm",
+    "password": "1206198812",
     "name": "loopback1",
-    "user": "root",
+    "user": "florin",
     "connector": "mysql"
   }
 }
